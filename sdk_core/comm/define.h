@@ -25,12 +25,11 @@
 #ifndef LIVOX_DEFINE_H_
 #define LIVOX_DEFINE_H_
 
-#include <stdio.h>
 #include <string>
-#include <memory>
 #include <functional>
 #include <vector>
 #include <atomic>
+#include <cstdint>
 
 #include "livox_lidar_def.h"
 

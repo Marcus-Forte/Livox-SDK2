@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0)
+cmake_minimum_required(VERSION 3.5)
 
 project(livox_sdk2)
 
@@ -17,4 +17,4 @@ if (UNIX)
 endif(UNIX)
 
 add_subdirectory(sdk_core)
-add_subdirectory(samples)
+add_subdirectory(samples EXCLUDE_FROM_ALL)

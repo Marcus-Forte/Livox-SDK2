@@ -1,5 +1,3 @@
-cmake_minimum_required(VERSION 3.0)
-
 set(DEMO_NAME livox_lidar_quick_start)
 add_executable(${DEMO_NAME} main.cpp)
 

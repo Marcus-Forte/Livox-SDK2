@@ -26,7 +26,7 @@
 #define LIVOX_FILE_MANAGER_
 
 #include <string>
-#include <vector>
+#include <cstdint>
 #include <map>
 
 namespace livox {
