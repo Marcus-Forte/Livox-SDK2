@@ -6,6 +6,10 @@ set(SDK_LIBRARY_SHARED livox_lidar_sdk_shared)
 add_library(${SDK_LIBRARY_STATIC} STATIC "")
 add_library(${SDK_LIBRARY_SHARED} SHARED "")
 
+# Keep Livox's bundled spdlog symbols separate from consumers' spdlog ABI.
+target_compile_definitions(${SDK_LIBRARY_STATIC} PRIVATE spdlog=livox_spdlog)
+target_compile_definitions(${SDK_LIBRARY_SHARED} PRIVATE spdlog=livox_spdlog)
+
 
 set(LIVOX_SDK_MAJOR_VERSION "0")
 set(LIVOX_SDK_MINOR_VERSION "0")
